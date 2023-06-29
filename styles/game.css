@@ -1,0 +1,260 @@
+
+.herogame {
+    background-image: url('../Illustrations-game/Batgame_1.png');
+    background-size: cover;
+	background-position: center;
+	height: clamp(400px, 80vw, 800px);
+	position: relative;
+	z-index: 1;
+}
+
+.game-text  {
+    position: absolute;
+	top: 40%;
+	left: 10%;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: clamp(24px, 3vw, 40px);
+}
+
+h1 {
+	padding-bottom: 8%;
+}
+
+h1 img {
+	width: clamp(40%, 3em, 90%);
+}
+
+
+
+h1, .page, #jeux {
+display: flex;
+justify-content: center;
+}
+
+.page, #jeux {
+	flex-direction: column;
+	align-items: center;
+	padding: 5%;
+}
+
+.mainpg {
+	width: 65vw;
+}
+
+/* Titre et numero du jeu */
+#jeux, h3 {
+	font-family: 'SpaceGrotesk-Regular';
+	color: white;
+	text-transform: uppercase;
+	padding: 3%;
+	letter-spacing: 3px;
+	font-size: clamp(12px, 2.4vw, 25px);
+}
+
+/* les choix de reponses */
+.game-choice {
+	z-index: 150;
+	display: flex;
+	background-color: #666666;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 70%;
+	}
+	
+	label {
+	margin-right: 10px;
+	}
+
+.page-content {
+	padding-left: 36%;
+}
+
+/* Question dans le jeu */
+h4 {
+	font-weight: normal;
+	font-family: 'SpaceGrotesk-Regular';
+	font-size: clamp(0.8rem, 1.6vw, 2.6rem);
+	word-spacing: 5px;
+	padding-bottom: 5%;
+	width: 88%;
+}
+
+	/* Personnalise la case à cocher */
+	input[type=radio] {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid #ccc;
+	margin-right: 5px;
+	vertical-align: middle;
+	background-color: #fff;
+	}
+	
+/* pour le boutton dans le jeu */
+button {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	font-family: 'Rajdhani';
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+	font-size: clamp(16px, 2.2vw, 23px);
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgba(237, 222, 191, 0.6), rgba(248, 132, 0, 0.61));
+    width: 25vw;
+    height: 4.5vw;
+    min-width: 120px;
+    min-height: 25px;
+    display: flex;
+	margin: 20px;
+}
+
+/* les images du jeu */
+.page img {
+	position: absolute;
+	z-index: -1;
+}
+
+#page1 img {
+	width: clamp(18vh, 16%, 15vw);
+	left: clamp(15vw, 18vw, 50% );
+	top: 10%;
+}
+
+#page2 img {
+	width: clamp(12vh, 12%, 15vw);
+	left: clamp(15vw, 18vw, 50% );
+	top: 25%;
+}
+
+#page3 img {
+	width: clamp(26vh, 23%, 30vw);
+	left: clamp(0vw, 8vw, 20% );
+	top: 14%;
+}
+
+#page4 img {
+	width: clamp(15vh, 18%, 30vw);
+	left: clamp(12vw, 20vw, 20% );
+	top: 0;
+}
+
+#page5 img {
+	width: clamp(15vh, 20%, 30vw);
+	left: clamp(0vw, 15vw, 20% );
+}
+
+.page6-img1 {
+	width: clamp(10vh, 14%, 30vw);
+	left: clamp(10vw, 20vw, 20% );
+	top: 2%;
+}
+
+.page6-img2 {
+	width: clamp(17vh, 20%, 30vw);
+	left: clamp(10vw, 15vw, 20% );
+	top: clamp(35vh, 40%, 50%) ;
+}
+
+.page6-img3 {
+	width: clamp(5vh, 10%, 30vw);
+	right: clamp(1vh, 10vw, 20% );
+	top: clamp(30vh, 35%, 50%) ;
+}
+
+#page7 img {
+	width: clamp(18vh, 25%, 30vw);
+	left: clamp(0vw, 10vw, 20% );
+	top: 22%;
+}
+
+#page8 img {
+	width: clamp(30vh, 25%, 30vw);
+	left: clamp(-10vw, 10%, 40% );
+	top: 10%;
+}
+
+.page9-img1 {
+	width: clamp(16vh, 16%, 30vw);
+	left: clamp(12vw, 17vw, 20% );
+	top: -12%;
+}
+
+.page9-img2 {
+	width: clamp(15vh, 17%, 30vw);
+	left: clamp(15vw, 20vw, 20% );
+	top: clamp(28vh, 32%, 50%) ;
+}
+
+.page9-img3 {
+	width: clamp(14vh, 13%, 30vw);
+	right: clamp(20vh, 22vw, 20% );
+	top: clamp(32vh, 35%, 50%) ;
+}
+
+.page10-img1 {
+	width: clamp(12vh, 11%, 30vw);
+	left: clamp(12vw, 18vw, 20% );
+	top: 20%;
+}
+
+.page10-img2 {
+	width: clamp(16.5vh, 16%, 30vw);
+	right: clamp(15vw, 20vw, 20% );
+	top: clamp(-31vh, -22%, 50%) ;
+}
+
+.page10-img3 {
+	width: clamp(12vh, 12%, 30vw);
+	right: clamp(18vh, 25%, 50vh );
+	top: clamp(30vh, 40%, 50vh) ;
+}
+
+#page11 img {
+	width: clamp(15vh, 29%, 30vw);
+	left: clamp(5%, 8vw, 40% );
+	top: 15%;
+}
+
+#page12 img {
+	width: clamp(15vh, 15%, 30vw);
+	left: clamp(18%, 18vw, 40% );
+	top: 10%;
+}
+
+#page13 img {
+	width: clamp(20vh, 24%, 30vw);
+	left: clamp(12%, 12vw, 40% );
+	top: 10%;
+}
+
+#page14 img {
+	width: clamp(25vh, 28%, 30vw);
+	left: clamp(7%, 10vw, 40% );
+	top: 20%;
+}
+
+#page15 img {
+	width: clamp(18vh, 18%, 30vw);
+	left: clamp(8%, 15vw, 40% );
+	top: 10%;
+}
+
+
+
+/* Cacher toutes les pages par défaut */
+.page {
+	display: none;
+	position: relative;
+	}
+  
+	/* Affichage de la page active */
+  .page-active {
+	display: block;
+	}
